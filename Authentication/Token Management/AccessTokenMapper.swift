@@ -27,5 +27,5 @@ final class AccessTokenMapper {
         }
 
         return .success(tokenDetails.jwtToken)
-    }
+    } //w
 }
