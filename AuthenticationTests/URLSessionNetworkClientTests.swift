@@ -3,14 +3,15 @@ import Authentication
 
 class URLSessionNetworkClientTests: XCTestCase {
 
-    override class func setUp() {
+    override func setUp() {
         super.setUp()
 
         URLProtocolStub.startInterceptingRequests()
     }
 
-    override class func tearDown() {
+    override func tearDown() {
         super.tearDown()
+        
         URLProtocolStub.stopInterceptingRequests()
     }
 
@@ -24,6 +25,33 @@ class URLSessionNetworkClientTests: XCTestCase {
         XCTAssertNotNil(resultErrorFor(data: anyData(), response: nonHTTPURLResponse(), error: anyNSError()))
         XCTAssertNotNil(resultErrorFor(data: anyData(), response: anyHTTPURLResponse(), error: anyNSError()))
         XCTAssertNotNil(resultErrorFor(data: anyData(), response: nonHTTPURLResponse(), error: nil))
+    }
+
+    func test_getFromURL_performsGETRequestWithURL() {
+        let url = anyURL()
+        let exp = expectation(description: "Wait for request")
+
+        URLProtocolStub.observeRequests {
+            request in
+            XCTAssertEqual(request.url, url)
+            XCTAssertEqual(request.httpMethod, "GET")
+            exp.fulfill()
+        }
+
+        /* We do not do
+
+        let receivedRequests: []
+        URLProtocolStub.observeRequests {
+            request in
+            receivedRequests.append(request)
+        }
+         makeSUT().execute(request: Request(url: anyURL(), header: [:])) { _ in }
+         XCTAssertEqual(receivedRequests.count, 1)
+
+         Because in tests, test cases are client side. This logic should not be in client side.
+ */
+        makeSUT().execute(request: Request(url: anyURL(), header: [:])) { _ in }
+        wait(for: [exp], timeout: 1.0)
     }
 
     func test_getFromURL_failsOnRequestError() {
@@ -146,14 +174,13 @@ class URLSessionNetworkClientTests: XCTestCase {
         }
 
         static func observeRequests(observer: @escaping (URLRequest) -> Void) {
-        requestObserver = observer
+            requestObserver = observer
         }
 
 
         static func stub(data: Data?, response: URLResponse?, error: Error?) {
              stub = Stub(data: data, response: response, error: error)
         }
-
 
         static func startInterceptingRequests() {
             URLProtocol.registerClass(URLProtocolStub.self)
@@ -175,6 +202,11 @@ class URLSessionNetworkClientTests: XCTestCase {
         }
 
         override func startLoading() {
+            if let requestObserver = URLProtocolStub.requestObserver {
+                client?.urlProtocolDidFinishLoading(self)
+                return requestObserver(request)
+            }
+
             if let data = URLProtocolStub.stub?.data{
                 client?.urlProtocol(self, didLoad: data)
             }
