@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930ECEDD2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930ECEDC2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift */; };
+		931A5D762A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A5D752A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift */; };
+		931A5D772A72888F00F123DA /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C40E4F2A438C8200A5AA89 /* Authentication.framework */; };
+		931A5D7E2A7289BC00F123DA /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A5D7D2A7289BC00F123DA /* URLSessionNetworkClient.swift */; };
+		934C892E2A461BCD00E2C107 /* TokenServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C892D2A461BCD00E2C107 /* TokenServiceTests.swift */; };
+		934C89302A462E9E00E2C107 /* RefreshTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C892F2A462E9E00E2C107 /* RefreshTokenProvider.swift */; };
+		934C89332A462EC800E2C107 /* TokenRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C89322A462EC800E2C107 /* TokenRefresher.swift */; };
+		934C89362A4630DA00E2C107 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C89352A4630DA00E2C107 /* TokenService.swift */; };
+		934C89392A46311E00E2C107 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C89382A46311E00E2C107 /* NetworkClient.swift */; };
+		934C893B2A46312400E2C107 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C893A2A46312400E2C107 /* Request.swift */; };
+		935677912A5B0A3000DC7646 /* URLSessionNetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935677902A5B0A3000DC7646 /* URLSessionNetworkClientTests.swift */; };
+		939C61292A5367F4005EEAA5 /* AccessTokenMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939C61282A5367F4005EEAA5 /* AccessTokenMapper.swift */; };
+		939C612B2A536808005EEAA5 /* AccessTokenErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939C612A2A536808005EEAA5 /* AccessTokenErrorMapper.swift */; };
 		93C40E542A438C8200A5AA89 /* Authentication.docc in Sources */ = {isa = PBXBuildFile; fileRef = 93C40E532A438C8200A5AA89 /* Authentication.docc */; };
 		93C40E5A2A438C8200A5AA89 /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C40E4F2A438C8200A5AA89 /* Authentication.framework */; };
-		93C40E5F2A438C8200A5AA89 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C40E5E2A438C8200A5AA89 /* AuthenticationTests.swift */; };
 		93C40E602A438C8200A5AA89 /* Authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C40E522A438C8200A5AA89 /* Authentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		931A5D782A72888F00F123DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93C40E462A438C8200A5AA89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C40E4E2A438C8200A5AA89;
+			remoteInfo = Authentication;
+		};
 		93C40E5B2A438C8200A5AA89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 93C40E462A438C8200A5AA89 /* Project object */;
@@ -24,14 +43,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930ECEDC2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeak.swift"; sourceTree = "<group>"; };
+		931A5D732A72888F00F123DA /* AuthenticationAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		931A5D752A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		931A5D7D2A7289BC00F123DA /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
+		934C892D2A461BCD00E2C107 /* TokenServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenServiceTests.swift; sourceTree = "<group>"; };
+		934C892F2A462E9E00E2C107 /* RefreshTokenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenProvider.swift; sourceTree = "<group>"; };
+		934C89322A462EC800E2C107 /* TokenRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefresher.swift; sourceTree = "<group>"; };
+		934C89352A4630DA00E2C107 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		934C89382A46311E00E2C107 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		934C893A2A46312400E2C107 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		935677902A5B0A3000DC7646 /* URLSessionNetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClientTests.swift; sourceTree = "<group>"; };
+		939C61282A5367F4005EEAA5 /* AccessTokenMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenMapper.swift; sourceTree = "<group>"; };
+		939C612A2A536808005EEAA5 /* AccessTokenErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenErrorMapper.swift; sourceTree = "<group>"; };
 		93C40E4F2A438C8200A5AA89 /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C40E522A438C8200A5AA89 /* Authentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Authentication.h; sourceTree = "<group>"; };
 		93C40E532A438C8200A5AA89 /* Authentication.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Authentication.docc; sourceTree = "<group>"; };
 		93C40E592A438C8200A5AA89 /* AuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93C40E5E2A438C8200A5AA89 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		931A5D702A72888F00F123DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931A5D772A72888F00F123DA /* Authentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93C40E4C2A438C8200A5AA89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,11 +89,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930ECEDB2A6AD34B00838D83 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				930ECEDC2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		931A5D742A72888F00F123DA /* AuthenticationAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				931A5D752A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift */,
+			);
+			path = AuthenticationAPIEndToEndTests;
+			sourceTree = "<group>";
+		};
+		934C89312A462EAF00E2C107 /* Token Management */ = {
+			isa = PBXGroup;
+			children = (
+				934C892F2A462E9E00E2C107 /* RefreshTokenProvider.swift */,
+				934C89322A462EC800E2C107 /* TokenRefresher.swift */,
+				934C89352A4630DA00E2C107 /* TokenService.swift */,
+				939C61282A5367F4005EEAA5 /* AccessTokenMapper.swift */,
+				939C612A2A536808005EEAA5 /* AccessTokenErrorMapper.swift */,
+			);
+			path = "Token Management";
+			sourceTree = "<group>";
+		};
+		934C89372A46310F00E2C107 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				934C89382A46311E00E2C107 /* NetworkClient.swift */,
+				934C893A2A46312400E2C107 /* Request.swift */,
+				931A5D7D2A7289BC00F123DA /* URLSessionNetworkClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		93C40E452A438C8200A5AA89 = {
 			isa = PBXGroup;
 			children = (
 				93C40E512A438C8200A5AA89 /* Authentication */,
 				93C40E5D2A438C8200A5AA89 /* AuthenticationTests */,
+				931A5D742A72888F00F123DA /* AuthenticationAPIEndToEndTests */,
 				93C40E502A438C8200A5AA89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +142,7 @@
 			children = (
 				93C40E4F2A438C8200A5AA89 /* Authentication.framework */,
 				93C40E592A438C8200A5AA89 /* AuthenticationTests.xctest */,
+				931A5D732A72888F00F123DA /* AuthenticationAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +150,8 @@
 		93C40E512A438C8200A5AA89 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				934C89372A46310F00E2C107 /* Networking */,
+				934C89312A462EAF00E2C107 /* Token Management */,
 				93C40E522A438C8200A5AA89 /* Authentication.h */,
 				93C40E532A438C8200A5AA89 /* Authentication.docc */,
 			);
@@ -80,7 +161,9 @@
 		93C40E5D2A438C8200A5AA89 /* AuthenticationTests */ = {
 			isa = PBXGroup;
 			children = (
-				93C40E5E2A438C8200A5AA89 /* AuthenticationTests.swift */,
+				930ECEDB2A6AD34B00838D83 /* Helpers */,
+				934C892D2A461BCD00E2C107 /* TokenServiceTests.swift */,
+				935677902A5B0A3000DC7646 /* URLSessionNetworkClientTests.swift */,
 			);
 			path = AuthenticationTests;
 			sourceTree = "<group>";
@@ -99,6 +182,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		931A5D722A72888F00F123DA /* AuthenticationAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931A5D7C2A72888F00F123DA /* Build configuration list for PBXNativeTarget "AuthenticationAPIEndToEndTests" */;
+			buildPhases = (
+				931A5D6F2A72888F00F123DA /* Sources */,
+				931A5D702A72888F00F123DA /* Frameworks */,
+				931A5D712A72888F00F123DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				931A5D792A72888F00F123DA /* PBXTargetDependency */,
+			);
+			name = AuthenticationAPIEndToEndTests;
+			productName = AuthenticationAPIEndToEndTests;
+			productReference = 931A5D732A72888F00F123DA /* AuthenticationAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		93C40E4E2A438C8200A5AA89 /* Authentication */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93C40E632A438C8200A5AA89 /* Build configuration list for PBXNativeTarget "Authentication" */;
@@ -113,6 +214,8 @@
 			dependencies = (
 			);
 			name = Authentication;
+			packageProductDependencies = (
+			);
 			productName = Authentication;
 			productReference = 93C40E4F2A438C8200A5AA89 /* Authentication.framework */;
 			productType = "com.apple.product-type.framework";
@@ -145,6 +248,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					931A5D722A72888F00F123DA = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					93C40E4E2A438C8200A5AA89 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -162,17 +268,27 @@
 				Base,
 			);
 			mainGroup = 93C40E452A438C8200A5AA89;
+			packageReferences = (
+			);
 			productRefGroup = 93C40E502A438C8200A5AA89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				93C40E4E2A438C8200A5AA89 /* Authentication */,
 				93C40E582A438C8200A5AA89 /* AuthenticationTests */,
+				931A5D722A72888F00F123DA /* AuthenticationAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		931A5D712A72888F00F123DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93C40E4D2A438C8200A5AA89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,11 +306,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		931A5D6F2A72888F00F123DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931A5D762A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93C40E4B2A438C8200A5AA89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934C89332A462EC800E2C107 /* TokenRefresher.swift in Sources */,
+				939C612B2A536808005EEAA5 /* AccessTokenErrorMapper.swift in Sources */,
+				934C893B2A46312400E2C107 /* Request.swift in Sources */,
+				931A5D7E2A7289BC00F123DA /* URLSessionNetworkClient.swift in Sources */,
+				934C89392A46311E00E2C107 /* NetworkClient.swift in Sources */,
+				939C61292A5367F4005EEAA5 /* AccessTokenMapper.swift in Sources */,
 				93C40E542A438C8200A5AA89 /* Authentication.docc in Sources */,
+				934C89302A462E9E00E2C107 /* RefreshTokenProvider.swift in Sources */,
+				934C89362A4630DA00E2C107 /* TokenService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,13 +334,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93C40E5F2A438C8200A5AA89 /* AuthenticationTests.swift in Sources */,
+				935677912A5B0A3000DC7646 /* URLSessionNetworkClientTests.swift in Sources */,
+				930ECEDD2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift in Sources */,
+				934C892E2A461BCD00E2C107 /* TokenServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		931A5D792A72888F00F123DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C40E4E2A438C8200A5AA89 /* Authentication */;
+			targetProxy = 931A5D782A72888F00F123DA /* PBXContainerItemProxy */;
+		};
 		93C40E5C2A438C8200A5AA89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 93C40E4E2A438C8200A5AA89 /* Authentication */;
@@ -217,6 +356,34 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		931A5D7A2A72888F00F123DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardonat.AuthenticationAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		931A5D7B2A72888F00F123DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardonat.AuthenticationAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		93C40E612A438C8200A5AA89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,6 +560,7 @@
 		93C40E672A438C8200A5AA89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -407,6 +575,7 @@
 		93C40E682A438C8200A5AA89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -421,6 +590,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		931A5D7C2A72888F00F123DA /* Build configuration list for PBXNativeTarget "AuthenticationAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931A5D7A2A72888F00F123DA /* Debug */,
+				931A5D7B2A72888F00F123DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		93C40E492A438C8200A5AA89 /* Build configuration list for PBXProject "Authentication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
