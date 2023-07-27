@@ -44,17 +44,6 @@
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "931A5D722A72888F00F123DA"
-               BuildableName = "AuthenticationAPIEndToEndTests.xctest"
-               BlueprintName = "AuthenticationAPIEndToEndTests"
-               ReferencedContainer = "container:Authentication.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "93C40E582A438C8200A5AA89"
                BuildableName = "AuthenticationTests.xctest"
                BlueprintName = "AuthenticationTests"
