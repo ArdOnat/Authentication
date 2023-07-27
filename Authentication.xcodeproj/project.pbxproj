@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		930ECEDD2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930ECEDC2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift */; };
-		931A5D762A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A5D752A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift */; };
 		931A5D772A72888F00F123DA /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C40E4F2A438C8200A5AA89 /* Authentication.framework */; };
 		931A5D7E2A7289BC00F123DA /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A5D7D2A7289BC00F123DA /* URLSessionNetworkClient.swift */; };
 		934C892E2A461BCD00E2C107 /* TokenServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C892D2A461BCD00E2C107 /* TokenServiceTests.swift */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		930ECEDC2A6AD36D00838D83 /* XCTestCase+MemoryLeak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeak.swift"; sourceTree = "<group>"; };
 		931A5D732A72888F00F123DA /* AuthenticationAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		931A5D752A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		931A5D7D2A7289BC00F123DA /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
 		934C892D2A461BCD00E2C107 /* TokenServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenServiceTests.swift; sourceTree = "<group>"; };
 		934C892F2A462E9E00E2C107 /* RefreshTokenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenProvider.swift; sourceTree = "<group>"; };
@@ -97,14 +95,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		931A5D742A72888F00F123DA /* AuthenticationAPIEndToEndTests */ = {
-			isa = PBXGroup;
-			children = (
-				931A5D752A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift */,
-			);
-			path = AuthenticationAPIEndToEndTests;
-			sourceTree = "<group>";
-		};
 		934C89312A462EAF00E2C107 /* Token Management */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +122,6 @@
 			children = (
 				93C40E512A438C8200A5AA89 /* Authentication */,
 				93C40E5D2A438C8200A5AA89 /* AuthenticationTests */,
-				931A5D742A72888F00F123DA /* AuthenticationAPIEndToEndTests */,
 				93C40E502A438C8200A5AA89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -310,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931A5D762A72888F00F123DA /* AuthenticationAPIEndToEndTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
