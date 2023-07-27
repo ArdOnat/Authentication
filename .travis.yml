@@ -1,4 +1,0 @@
-os: osx
-osx_image: xcode14.2
-language: swift
-Script: xcodebuild clean build test -project Authentication.xcodeproj -scheme "CI" CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=""
